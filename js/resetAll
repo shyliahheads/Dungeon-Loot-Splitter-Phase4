@@ -1,0 +1,16 @@
+function resetAll() {
+
+    // Clear in-memory state
+    loot = [];
+    partySize = 1;
+
+    // Remove saved state
+    localStorage.removeItem(STORAGE_KEY);
+
+    // Reset input field
+    document.getElementById("partySize").value = 1;
+
+    // Re-render UI
+    updateUI();
+
+}
