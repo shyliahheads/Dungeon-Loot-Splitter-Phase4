@@ -50,9 +50,13 @@
     <!-- Split Loot -->
     <section class="panel">
         <h2>Split Loot</h2>
-
+        
         <button id="splitLootBtn">Split Loot</button>
 
+<button onclick="syncToServer()">Sync to Server</button>
+<button onclick="loadFromServer()">Load from Server</button>
+     <p id="message"></p>
+        
         <div id="results">
             <p><strong>Total Loot:</strong> $<span id="finalTotal">0.00</span></p>
             <p><strong>Loot Per Party Member:</strong> $<span id="perMember">0.00</span></p>
