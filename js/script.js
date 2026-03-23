@@ -174,7 +174,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // restore party size into input field
     document.getElementById("partySize").value = partySize;
+    
+function showMessage(msg) {
+    document.getElementById("message").textContent = msg;
+}
+    
 
     updateUI();
 
 });
+
